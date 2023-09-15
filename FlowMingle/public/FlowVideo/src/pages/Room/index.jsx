@@ -7,9 +7,9 @@ const RoomPage = () => {
     const{ roomId } = useParams()
 
     const myMeeting = async (element) => {
-        const appID = 727906480;
+        const appID = 884238991;
         
-        const serverSecret = "4b966f7ac32b88ad317f453109034cfe";
+        const serverSecret = "9b9cef51f5eb5afe07064a5ff388315d";
         const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(appID, 
             serverSecret, 
             roomId, 
@@ -35,7 +35,12 @@ const RoomPage = () => {
     };
 
     return <div>
-        <div ref={myMeeting}/>
+        
+        <div ref={myMeeting} style={{ 
+            marginTop: "250px",
+            justifyContent: "center",      
+    }} />
+        
          </div>;
 
 

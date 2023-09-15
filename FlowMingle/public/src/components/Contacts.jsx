@@ -27,7 +27,7 @@ export default function Contacts({ contacts, changeChat }) {
         <Container>
           <div className="brand">
             <img src={Logo} alt="logo" />
-            <h3>FlowMingle</h3>
+            <h3>Mingle</h3>
           </div>
           <div className="contacts">
             {contacts.map((contact, index) => {
@@ -70,13 +70,14 @@ export default function Contacts({ contacts, changeChat }) {
 }
 const Container = styled.div`
   display: grid;
+  border-radius: 20px;
   grid-template-rows: 10% 75% 15%;
   overflow: hidden;
-  background-color: #080420;
+  background-color: #1A315E;
   .brand {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    
     justify-content: center;
     img {
       height: 2rem;
@@ -123,12 +124,13 @@ const Container = styled.div`
       }
     }
     .selected {
-      background-color: #9a86f3;
+      background-color: #84A4E3;
     }
   }
 
   .current-user {
-    background-color: #0d0d30;
+    border-radius: 20px;
+    background-color: #fe5f55;
     display: flex;
     justify-content: center;
     align-items: center;

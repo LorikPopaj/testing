@@ -137,7 +137,9 @@ const FormContainer = styled.div`
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  background-color: #131324;
+  background: linear-gradient(-45deg, #1A315E, #2C529E, #3766C4, #ee7752);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   .brand {
     display: flex;
     align-items: center;

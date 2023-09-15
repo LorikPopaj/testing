@@ -100,7 +100,9 @@ const FormContainer = styled.div`
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  background-color: #131324;
+  background: linear-gradient(-45deg, #1A315E, #2C529E, #3766C4, #ee7752);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   .brand {
     display: flex;
     align-items: center;
@@ -126,7 +128,7 @@ const FormContainer = styled.div`
   input {
     background-color: transparent;
     padding: 1rem;
-    border: 0.1rem solid #4e0eff;
+    border: 0.1rem solid #0E6AB5;
     border-radius: 0.4rem;
     color: white;
     width: 100%;
@@ -137,7 +139,7 @@ const FormContainer = styled.div`
     }
   }
   button {
-    background-color: #4e0eff;
+    background-color: #0E6AB5;
     color: white;
     padding: 1rem 2rem;
     border: none;
