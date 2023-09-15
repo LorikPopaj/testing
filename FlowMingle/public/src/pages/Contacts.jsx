@@ -3,7 +3,13 @@ import '../main.css';
 import {BrowserRouter, Route, Routes, NavLink} from 'react-router-dom';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Facebook from "../assets/facebook.png";
+import Instagram from "../assets/instagram.png";
+import Youtube from "../assets/youtube.png";
+import Gmail from "../assets/gmail.png";
+import Icon from "../assets/icon.png";
 import Logo from "../assets/logo.png";
+import { BsYoutube } from "react-icons/bs";
 
 export class Contacts extends Component{
     render(){
@@ -29,10 +35,10 @@ export class Contacts extends Component{
          width="30%" height="300px" style={{border: "0"}} allowFullScreen loading="lazy"></iframe>
          <div>
           <div style={{margin: "50% auto"}}>
-           <img src="http://localhost:5231/Photos/icon.png" style={{width: "20px", height: "20px"}} /> +383 49 570 576
+           <img src={Icon}  style={{width: "20px", height: "20px"}} /> +383 49 570 576
           </div>
           <div>
-            <img src="http://localhost:5231/Photos/icon.png" style={{width: "20px", height: "20px"}} /> +383 49 570 576
+            <img src={Icon} style={{width: "20px", height: "20px"}} /> +383 49 570 576
            </div>
          </div>
         </div>
@@ -44,20 +50,20 @@ export class Contacts extends Component{
          </div>
         <div className="img-columns" style={{padding: "2%"}}>
          <div className="linkicon">
-          <a target="_blank" href="https://www.facebook.com/Flow-Entertainment-100628881531882/?modal=admin_todo_tour%22%3E"><img className="ftimg" src="http://localhost:5231/Photos/facebook.png" height="100" width="100" alt="Facebook.png"/></a>
+          <a target="_blank" href="https://www.facebook.com/Flow-Entertainment-100628881531882/?modal=admin_todo_tour%22%3E"><img className="ftimg" src={Facebook} height="100" width="100" alt="Facebook.png"/></a>
           <h3>Facebook</h3>
          </div>
          <div className="linkicon">
-          <a target="_blank" href="https://www.instagram.com/flow.entertainment.games/"><img className="ftimg" src="http://localhost:5231/Photos/instagram.png" height="100" width="100" alt="Instagram.png"/></a>
+          <a target="_blank" href="https://www.instagram.com/flow.entertainment.games/"><img className="ftimg" src={Instagram} height="100" width="100" alt="Instagram.png"/></a>
           <h3>Instagram</h3>
          </div>
          <div className="linkicon">
-          <a target="_blank" href="https://www.youtube.com/channel/UCk1H9Uwr8k82EouBomBjosA?view_as=subscriber%22%3E"><img src="http://localhost:5231/Photos/youtube.png" height="100" width="100" alt="Youtube.png"/></a>
+          <a target="_blank" href="https://www.youtube.com/channel/UCk1H9Uwr8k82EouBomBjosA?view_as=subscriber%22%3E"><img className="ftimg" src={Youtube} height="100" width="100" alt="Youtube.png"/></a>
           <h3>YouTube</h3>
          </div>
          <div className="linkicon">
-           <a target="_blank" href="https://www.google.com/gmail/"><img src="http://localhost:5231/Photos/gmail.png" width="100px" height="100px"/></a>
-           <h3>GMail</h3>
+           <a target="_blank" href="https://www.google.com/gmail/"><img src={Gmail}  width="100px" height="100px"/></a>
+           <h3>Gmail</h3>
          </div>
        </div>
 
